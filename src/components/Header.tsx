@@ -64,8 +64,7 @@ const Header: React.FC = () => {
             as="a"
             href={getPhoneLink(CONTACT_INFO.mobile1)}
             aria-label="Call us"
-            icon={<Icon as={FaPhone as React.FC<IconProps>} />}
-            colorScheme="green"
+            icon={<Icon as={FaPhone as React.FC<IconProps>} />}            colorScheme="purple"
             size={{ base: "sm", md: "md" }}
             variant="solid"
             borderRadius="full"
@@ -74,7 +73,7 @@ const Header: React.FC = () => {
             href={getWhatsAppLink(CONTACT_INFO.whatsapp)}
             aria-label="WhatsApp"
             icon={<Icon as={FaWhatsapp as React.FC<IconProps>} />}
-            colorScheme="whatsapp"
+            colorScheme="red"
             size={{ base: "sm", md: "md" }}
             variant="solid"
             borderRadius="full"

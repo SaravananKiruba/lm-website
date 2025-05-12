@@ -125,7 +125,7 @@ const OwnProducts: React.FC = () => {
             <option value="low">Price: Low to High</option>
             <option value="high">Price: High to Low</option>
           </ChakraSelect>
-        </Flex>        <ChakraTabs variant="enclosed" colorScheme="blue">
+        </Flex>        <ChakraTabs variant="enclosed" colorScheme="red">
           <ChakraTabList>
             <ChakraTab fontWeight="medium">All Products</ChakraTab>
             <ChakraTab fontWeight="medium">Furniture</ChakraTab>

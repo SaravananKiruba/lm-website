@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
               >                <Button 
                   as={RouterLink} 
                   to="/own-products" 
-                  colorScheme="blue" 
+                  colorScheme="red" 
                   size="lg" 
                   rightIcon={<Icon as={FaArrowRight as React.FC<IconProps>} />}
                 >

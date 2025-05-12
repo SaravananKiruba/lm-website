@@ -142,10 +142,9 @@ const Contact: React.FC = () => {
                       rows={5}
                     />
                   </FormControl>
-                  
-                  <Button 
+                    <Button 
                     type="submit" 
-                    colorScheme="blue" 
+                    colorScheme="red" 
                     size="lg" 
                     width="full"
                     isLoading={isSubmitting}

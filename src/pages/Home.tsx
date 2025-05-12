@@ -93,10 +93,10 @@ const Home: React.FC = () => {
             ))}
           </SimpleGrid>
 
-          <Center>            <Button 
+          <Center>              <Button 
               onClick={() => window.location.href = '/own-products'} 
               size="lg" 
-              colorScheme="blue"
+              colorScheme="red" 
             >
               View All Products
             </Button>

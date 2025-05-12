@@ -35,8 +35,7 @@ const ProductCard: React.FC<ProductProps> = ({ name, description, image, priceIn
       />
 
       <Box p={6}>
-        <Flex justify="space-between" align="center" mb={2}>
-          <Badge colorScheme={category === 'Furniture' ? 'blue' : 'green'} borderRadius="full" px={2}>
+        <Flex justify="space-between" align="center" mb={2}>          <Badge colorScheme={category === 'Furniture' ? 'purple' : 'red'} borderRadius="full" px={2}>
             {category}
           </Badge>
           <Text color="brand.primary" fontWeight="bold">

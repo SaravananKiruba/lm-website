@@ -64,7 +64,7 @@ const BrandCard: React.FC<BrandProps> = ({ name, logo, description, catalogLink 
           href={catalogLink}
           isExternal
           rightIcon={<DownloadIcon />}
-          colorScheme="blue"
+          colorScheme="red"
           variant="outline"
           size="sm"
           _hover={{ textDecoration: 'none', bg: 'brand.light' }}

@@ -39,8 +39,7 @@ const ContactInfo: React.FC = () => {
             <Button 
               as={Link} 
               href={getWhatsAppLink(CONTACT_INFO.whatsapp, "Hello! I'm interested in your products.")} 
-              size="sm" 
-              colorScheme="whatsapp" 
+              size="sm"              colorScheme="red" 
               isExternal
               _hover={{ textDecoration: 'none' }}
             >

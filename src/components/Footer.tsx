@@ -39,12 +39,11 @@ const Footer: React.FC = () => {
           </VStack>
 
           <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
-            <Text fontWeight="bold" mb={2}>Follow Us</Text>
-            <HStack spacing={4}>              <Link href={SOCIAL_LINKS.facebook} isExternal aria-label="Facebook">
-                <Icon as={FaFacebook as React.FC<IconProps>} boxSize={5} color="facebook.500" />
+            <Text fontWeight="bold" mb={2}>Follow Us</Text>            <HStack spacing={4}>              <Link href={SOCIAL_LINKS.facebook} isExternal aria-label="Facebook">
+                <Icon as={FaFacebook as React.FC<IconProps>} boxSize={5} color="brand.secondary" />
               </Link>
               <Link href={SOCIAL_LINKS.instagram} isExternal aria-label="Instagram">
-                <Icon as={FaInstagram as React.FC<IconProps>} boxSize={5} color="pink.500" />
+                <Icon as={FaInstagram as React.FC<IconProps>} boxSize={5} color="brand.primary" />
               </Link>
             </HStack>
           </VStack>
