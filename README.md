@@ -1,12 +1,71 @@
-# Getting Started with Create React App
+# Lakshmi Mahendra Website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A mobile-responsive React website for Lakshmi Mahendra, a home appliances and furniture dealer in Madurai.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Home Page** with hero banner, business information, and quick navigation
+- **Own Products Page** displaying furniture and appliances
+- **Dealership Products Page** showcasing partner brands
+- **About Page** with business history and values
+- **Contact Page** with business address, contact details, and form
 
-### `npm start`
+## Tech Stack
+
+- React with TypeScript
+- Chakra UI for styling
+- React Router for navigation
+- Framer Motion for animations
+- React Icons for icons
+
+## Getting Started
+
+### Prerequisites
+
+- Node.js (version 14.0.0 or later)
+- npm (version 6.0.0 or later)
+
+### Installation
+
+1. Clone the repository
+2. Navigate to the project directory
+3. Install dependencies:
+
+```
+npm install
+```
+
+### Running the Development Server
+
+```
+npm start
+```
+
+This will start the development server at [http://localhost:3000](http://localhost:3000).
+
+### Building for Production
+
+```
+npm run build
+```
+
+This will create a production-ready build in the `build` folder.
+
+## Project Structure
+
+- `src/pages/` - Main page components
+- `src/components/` - Reusable UI components
+- `src/theme/` - Chakra UI theme customization
+- `src/constants/` - Static data and configurations
+- `src/utils/` - Utility functions
+- `src/assets/` - Images, icons, and other static assets
+
+## Contact Information
+
+- Phone: 0452-4219358
+- Mobile: 96007 13824 / 63014 35668
+- WhatsApp: 63014 35668
+- Address: 6, Patchai NachiAmman Koil Street, Nethaji Road, Madurai - 1
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
