@@ -37,7 +37,7 @@ const Dealership: React.FC = () => {
               Why Buy From Authorized Dealers?
             </Heading>
             <Text fontSize="lg" color="gray.600" maxW="800px">
-              When you purchase from Lakshmi Mahendra, you get genuine products, manufacturer warranty, and excellent after-sales service
+              When you purchase from Lakshmi Sumati, you get genuine products, manufacturer warranty, and excellent after-sales service
             </Text>
           </VStack>
 

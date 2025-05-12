@@ -1,6 +1,6 @@
-# Lakshmi Mahendra Website
+# Lakshmi Sumati Website
 
-A mobile-responsive React website for Lakshmi Mahendra, a home appliances and furniture dealer in Madurai.
+A mobile-responsive React website for Lakshmi Sumati, a home appliances and furniture dealer in Madurai.
 
 ## Features
 

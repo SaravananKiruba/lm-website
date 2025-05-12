@@ -2,11 +2,11 @@ import { extendTheme } from '@chakra-ui/react';
 
 const colors = {
   brand: {
-    primary: '#8c0707', // Dark Red
-    secondary: '#32097d', // Deep Purple
-    accent: '#d31638', // Bright Red
+    primary: '#1075f0', // Deep Blue
+    secondary: '#d31638', // Bright Red
+    accent: '#d31638', // White
     light: '#fefefe', // White
-    dark: '#ab3946', // Rose Red
+    dark: '#d31638', // Deep Blue
   },
 };
 

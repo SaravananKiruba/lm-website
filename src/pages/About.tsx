@@ -69,7 +69,7 @@ const About: React.FC = () => {
                 Our Story
               </Heading>
               <Text fontSize="lg" color="gray.600">
-                Lakshmi Mahendra was established in 1995 with a vision to provide quality home furniture and appliances to the people of Madurai. What started as a small shop has now grown into a trusted name in the industry.
+                Lakshmi Sumati was established in 1995 with a vision to provide quality home furniture and appliances to the people of Madurai. What started as a small shop has now grown into a trusted name in the industry.
               </Text>
               <Text fontSize="lg" color="gray.600">
                 For over two decades, we have maintained our commitment to quality, customer satisfaction, and reliable service. Our journey has been defined by our dedication to bringing premium brands and products to our customers at competitive prices.
@@ -150,7 +150,7 @@ const About: React.FC = () => {
                 Our Promise to You
               </Heading>
               <Text fontSize="lg" color="gray.600">
-                At Lakshmi Mahendra, we promise to provide:
+                At Lakshmi Sumati, we promise to provide:
               </Text>
               <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
                 <Text fontSize="lg" color="gray.700">• Genuine products with manufacturer warranty</Text>

@@ -47,7 +47,7 @@ const Home: React.FC = () => {
         <Container maxW="1200px">
           <VStack gap={4} mb={12} textAlign="center">
             <Heading as="h2" size="xl" color="brand.dark">
-              Why Choose Lakshmi Mahendra?
+              Why Choose Lakshmi Sumati?
             </Heading>
             <Text fontSize="lg" color="gray.600" maxW="700px">
               We provide quality home solutions with trusted service for over two decades

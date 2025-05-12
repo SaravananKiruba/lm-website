@@ -81,7 +81,7 @@ const Contact: React.FC = () => {
                 height="100%" 
                 style={{ border: 0 }} 
                 loading="lazy" 
-                title="Lakshmi Mahendra Google Map Location" 
+                title="Lakshmi Sumati Google Map Location" 
               />
             </Box>
           </Box>

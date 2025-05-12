@@ -36,7 +36,7 @@ const Header: React.FC = () => {
             color="brand.primary"
             _hover={{ textDecoration: 'none' }}
           >
-            Lakshmi Mahendra
+            Lakshmi Sumati
           </Heading>
         </Flex>
 

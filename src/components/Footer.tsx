@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
         >
           <VStack align={{ base: 'center', md: 'flex-start' }} mb={{ base: 6, md: 0 }}>
             <Text fontSize="lg" fontWeight="bold" color="brand.primary" mb={2}>
-              Lakshmi Mahendra
+              Lakshmi Sumati
             </Text>
             <Text fontSize="sm" color="gray.600" maxW="300px">
               Your trusted dealer for quality home appliances and furniture in Madurai.
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
         
         <Box borderTopWidth={1} borderColor="gray.200" mt={8} pt={6} textAlign="center">
           <Text fontSize="sm" color="gray.500">
-            © {year} Lakshmi Mahendra. All rights reserved.
+            © {year} Lakshmi Sumati. All rights reserved.
           </Text>
         </Box>
       </Container>

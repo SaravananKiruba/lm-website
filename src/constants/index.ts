@@ -12,8 +12,8 @@ export const CONTACT_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  facebook: 'https://facebook.com/lakshmimahendra',
-  instagram: 'https://instagram.com/lakshmimahendra',
+  facebook: 'https://facebook.com/lakshmiSumati',
+  instagram: 'https://instagram.com/lakshmiSumati',
 };
 
 export const PRODUCTS = {
