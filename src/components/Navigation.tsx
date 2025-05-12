@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Link, Text } from '@chakra-ui/react';
+import { Box, Flex, Link, Text, Icon, IconProps } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import { FaHome, FaShoppingCart, FaBuilding, FaPhone, FaInfoCircle } from 'react-icons/fa';
 
@@ -52,20 +52,15 @@ const Navigation: React.FC<Props> = ({ currentPath }) => {
       py={2}
       zIndex={10}
       display={{ base: 'flex', md: 'none' }}
-    >
-      <NavLink to="/" icon={<FaHome />} isActive={currentPath === '/'}>
+    >      <NavLink to="/" icon={<Icon as={FaHome as React.FC<IconProps>} />} isActive={currentPath === '/'}>
         Home
-      </NavLink>
-      <NavLink to="/own-products" icon={<FaShoppingCart />} isActive={currentPath === '/own-products'}>
+      </NavLink>      <NavLink to="/own-products" icon={<Icon as={FaShoppingCart as React.FC<IconProps>} />} isActive={currentPath === '/own-products'}>
         Our Products
-      </NavLink>
-      <NavLink to="/dealership" icon={<FaBuilding />} isActive={currentPath === '/dealership'}>
+      </NavLink>      <NavLink to="/dealership" icon={<Icon as={FaBuilding as React.FC<IconProps>} />} isActive={currentPath === '/dealership'}>
         Dealership
-      </NavLink>
-      <NavLink to="/about" icon={<FaInfoCircle />} isActive={currentPath === '/about'}>
+      </NavLink>      <NavLink to="/about" icon={<Icon as={FaInfoCircle as React.FC<IconProps>} />} isActive={currentPath === '/about'}>
         About
-      </NavLink>
-      <NavLink to="/contact" icon={<FaPhone />} isActive={currentPath === '/contact'}>
+      </NavLink>      <NavLink to="/contact" icon={<Icon as={FaPhone as React.FC<IconProps>} />} isActive={currentPath === '/contact'}>
         Contact
       </NavLink>
     </Flex>

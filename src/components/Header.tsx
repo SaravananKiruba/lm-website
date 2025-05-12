@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, HStack, Link, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, VStack, Text, CloseButton } from '@chakra-ui/react';
+import { Box, Flex, Heading, HStack, Link, IconButton, useDisclosure, Drawer, DrawerOverlay, DrawerContent, DrawerHeader, DrawerBody, VStack, Text, CloseButton, Icon, IconProps } from '@chakra-ui/react';
 import { Link as RouterLink, useLocation } from 'react-router-dom';
 import { FaPhone, FaWhatsapp, FaBars } from 'react-icons/fa';
 import { CONTACT_INFO } from '../constants';
@@ -60,30 +60,27 @@ const Header: React.FC = () => {
         </HStack>
 
         {/* Contact Buttons */}
-        <HStack spacing={2}>
-          <IconButton
+        <HStack spacing={2}>          <IconButton
             as="a"
             href={getPhoneLink(CONTACT_INFO.mobile1)}
             aria-label="Call us"
-            icon={<FaPhone />}
+            icon={<Icon as={FaPhone as React.FC<IconProps>} />}
             colorScheme="green"
             size={{ base: "sm", md: "md" }}
             variant="solid"
             borderRadius="full"
-          />
-          <IconButton
+          />          <IconButton
             as="a"
             href={getWhatsAppLink(CONTACT_INFO.whatsapp)}
             aria-label="WhatsApp"
-            icon={<FaWhatsapp />}
+            icon={<Icon as={FaWhatsapp as React.FC<IconProps>} />}
             colorScheme="whatsapp"
             size={{ base: "sm", md: "md" }}
             variant="solid"
             borderRadius="full"
-          />
-          <IconButton
+          />          <IconButton
             aria-label="Open menu"
-            icon={<FaBars />}
+            icon={<Icon as={FaBars as React.FC<IconProps>} />}
             variant="ghost"
             display={{ base: "flex", md: "none" }}
             onClick={onOpen}

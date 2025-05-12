@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Button, Container, Flex, Heading, Text, VStack } from '@chakra-ui/react';
+import { Box, Button, Container, Flex, Heading, Text, VStack, Icon, IconProps } from '@chakra-ui/react';
 import { FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 import { Link as RouterLink } from 'react-router-dom';
@@ -67,13 +67,12 @@ const Hero: React.FC = () => {
                 gap={4} 
                 w="full" 
                 justify={{ base: 'center', md: 'flex-start' }}
-              >
-                <Button 
+              >                <Button 
                   as={RouterLink} 
                   to="/own-products" 
                   colorScheme="blue" 
                   size="lg" 
-                  rightIcon={<FaArrowRight />}
+                  rightIcon={<Icon as={FaArrowRight as React.FC<IconProps>} />}
                 >
                   Explore Products
                 </Button>

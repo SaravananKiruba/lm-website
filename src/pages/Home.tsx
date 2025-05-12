@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Heading, SimpleGrid, Text, Button, Flex, Icon, VStack, Divider as ChakraDivider, Center } from '@chakra-ui/react';
+import { Box, Container, Heading, SimpleGrid, Text, Button, Flex, Icon, VStack, Divider as ChakraDivider, Center, IconProps } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { Link as RouterLink } from 'react-router-dom';
 import { FaCouch, FaTools, FaShieldAlt, FaHandshake } from 'react-icons/fa';
@@ -54,24 +54,21 @@ const Home: React.FC = () => {
             </Text>
           </VStack>
 
-          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={8}>
-            <FeatureBox
-              icon={<FaCouch size={32} color="currentColor" />}
+          <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} gap={8}>            <FeatureBox
+              icon={<Icon as={FaCouch as React.FC<IconProps>} boxSize={8} />}
               title="Quality Products"
               description="We offer a wide range of high-quality furniture and appliances from trusted brands."
-            />
-            <FeatureBox
-              icon={<FaTools size={32} color="currentColor" />}
+            />            <FeatureBox
+              icon={<Icon as={FaTools as React.FC<IconProps>} boxSize={8} />}
               title="Expert Support"
               description="Our team provides expert guidance to help you find the perfect products for your home."
-            />
-            <FeatureBox
-              icon={<FaShieldAlt size={32} color="currentColor" />}
+            />            <FeatureBox
+              icon={<Icon as={FaShieldAlt as React.FC<IconProps>} boxSize={8} />}
               title="Warranty Assured"
               description="All our products come with manufacturer warranty and our service guarantee."
             />
             <FeatureBox
-              icon={<FaHandshake size={32} color="currentColor" />}
+              icon={<Icon as={FaHandshake as React.FC<IconProps>} boxSize={8} />}
               title="Customer First"
               description="We prioritize customer satisfaction with transparent pricing and reliable service."
             />

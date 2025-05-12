@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Heading, Text, VStack, Flex, Image, SimpleGrid, Icon } from '@chakra-ui/react';
+import { Box, Container, Heading, Text, VStack, Flex, Image, SimpleGrid, Icon, IconProps } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { FaHistory, FaAward, FaHandshake, FaUsers } from 'react-icons/fa';
 
@@ -109,23 +109,20 @@ const About: React.FC = () => {
           </VStack>
 
           <SimpleGrid columns={{ base: 1, md: 2, lg: 4 }} spacing={8}>
-            <ValueCard
-              icon={<Icon as={FaAward} boxSize={10} />}
+            <ValueCard              icon={<Icon as={FaAward as React.FC<IconProps>} boxSize={10} />}
               title="Quality"
               description="We believe in offering only the best quality products that provide long-term value to our customers."
             />
-            <ValueCard
-              icon={<Icon as={FaHandshake} boxSize={10} />}
+            <ValueCard              icon={<Icon as={FaHandshake as React.FC<IconProps>} boxSize={10} />}
               title="Integrity"
               description="Honesty and transparency are at the core of our business practices and customer relationships."
             />
             <ValueCard
-              icon={<Icon as={FaUsers} boxSize={10} />}
+              icon={<Icon as={FaUsers as React.FC<IconProps>} boxSize={10} />}
               title="Customer-first"
               description="Our customers' needs and satisfaction drive every decision we make as a business."
             />
-            <ValueCard
-              icon={<Icon as={FaHistory} boxSize={10} />}
+            <ValueCard              icon={<Icon as={FaHistory as React.FC<IconProps>} boxSize={10} />}
               title="Reliability"
               description="We stand behind our products and services, ensuring consistent quality and support."
             />

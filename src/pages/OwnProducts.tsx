@@ -20,7 +20,9 @@ import {
   Tab as ChakraTab,
   TabPanel as ChakraTabPanel,
   TabPanels as ChakraTabPanels,
-  Select as ChakraSelect
+  Select as ChakraSelect,
+  Icon,
+  IconProps
 } from '@chakra-ui/react';
 import { motion } from 'framer-motion';
 import { FaFilter } from 'react-icons/fa';
@@ -62,9 +64,8 @@ const OwnProducts: React.FC = () => {
       </Box>
 
       <Container maxW="1200px" pb={16}>
-        {/* Mobile Filter Button */}
-        <Flex justify="space-between" align="center" mb={6} display={{ base: 'flex', md: 'none' }}>          <Button onClick={onOpen} variant="outline">
-            <FaFilter style={{ marginRight: '8px' }} /> Filters
+        {/* Mobile Filter Button */}        <Flex justify="space-between" align="center" mb={6} display={{ base: 'flex', md: 'none' }}>          <Button onClick={onOpen} variant="outline">
+            <Icon as={FaFilter as React.FC<IconProps>} mr={2} /> Filters
           </Button>          <ChakraSelect 
             placeholder="Sort by"
             maxW="150px" 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Container, Flex, Link, Text, VStack, HStack, Icon } from '@chakra-ui/react';
+import { Box, Container, Flex, Link, Text, VStack, HStack, Icon, IconProps } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
 import { FaFacebook, FaInstagram } from 'react-icons/fa';
 import { SOCIAL_LINKS } from '../constants';
@@ -40,12 +40,11 @@ const Footer: React.FC = () => {
 
           <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
             <Text fontWeight="bold" mb={2}>Follow Us</Text>
-            <HStack spacing={4}>
-              <Link href={SOCIAL_LINKS.facebook} isExternal aria-label="Facebook">
-                <Icon as={FaFacebook} boxSize={5} color="facebook.500" />
+            <HStack spacing={4}>              <Link href={SOCIAL_LINKS.facebook} isExternal aria-label="Facebook">
+                <Icon as={FaFacebook as React.FC<IconProps>} boxSize={5} color="facebook.500" />
               </Link>
               <Link href={SOCIAL_LINKS.instagram} isExternal aria-label="Instagram">
-                <Icon as={FaInstagram} boxSize={5} color="pink.500" />
+                <Icon as={FaInstagram as React.FC<IconProps>} boxSize={5} color="pink.500" />
               </Link>
             </HStack>
           </VStack>
