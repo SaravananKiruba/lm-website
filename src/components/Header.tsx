@@ -57,27 +57,32 @@ const Header: React.FC = () => {
               {link.name}
             </Link>
           ))}
-        </HStack>
-
-        {/* Contact Buttons */}
-        <HStack spacing={2}>          <IconButton
+        </HStack>        {/* Contact Buttons */}
+        <HStack spacing={2}>
+          <IconButton
             as="a"
             href={getPhoneLink(CONTACT_INFO.mobile1)}
             aria-label="Call us"
-            icon={<Icon as={FaPhone as React.FC<IconProps>} />}            colorScheme="purple"
+            icon={<Icon as={FaPhone as React.FC<IconProps>} />}
+            colorScheme="purple"
             size={{ base: "sm", md: "md" }}
             variant="solid"
             borderRadius="full"
-          />          <IconButton
+          />
+          <IconButton
             as="a"
             href={getWhatsAppLink(CONTACT_INFO.whatsapp)}
             aria-label="WhatsApp"
             icon={<Icon as={FaWhatsapp as React.FC<IconProps>} />}
-            colorScheme="red"
+            colorScheme="green"
             size={{ base: "sm", md: "md" }}
             variant="solid"
             borderRadius="full"
-          />          <IconButton
+            boxShadow="sm"
+            _hover={{ transform: "scale(1.05)", boxShadow: "md" }}
+            transition="all 0.2s"
+          />
+          <IconButton
             aria-label="Open menu"
             icon={<Icon as={FaBars as React.FC<IconProps>} />}
             variant="ghost"

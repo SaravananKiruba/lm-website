@@ -32,16 +32,17 @@ const ContactInfo: React.FC = () => {
                 <Text>{CONTACT_INFO.mobile2}</Text>
               </Link>
             </VStack>
-          </HStack>
-            <HStack spacing={3}>
-            <Icon as={FaWhatsapp as React.FC<IconProps>} color="brand.primary" boxSize={5} />
+          </HStack>            <HStack spacing={3}>
+            <Icon as={FaWhatsapp as React.FC<IconProps>} color="green.500" boxSize={5} />
             <Text>{CONTACT_INFO.whatsapp}</Text>
             <Button 
               as={Link} 
               href={getWhatsAppLink(CONTACT_INFO.whatsapp, "Hello! I'm interested in your products.")} 
-              size="sm"              colorScheme="red" 
+              size="sm"
+              colorScheme="green" 
               isExternal
-              _hover={{ textDecoration: 'none' }}
+              _hover={{ textDecoration: 'none', transform: "scale(1.05)" }}
+              transition="all 0.2s"
             >
               Chat Now
             </Button>

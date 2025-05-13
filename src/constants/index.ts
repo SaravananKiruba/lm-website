@@ -12,7 +12,6 @@ export const CONTACT_INFO = {
 };
 
 export const SOCIAL_LINKS = {
-  facebook: 'https://facebook.com/lakshmiSumati',
   instagram: 'https://instagram.com/lakshmiSumati',
 };
 

@@ -1,8 +1,14 @@
 import React from 'react';
 import { Box, Container, Flex, Link, Text, VStack, HStack, Icon, IconProps } from '@chakra-ui/react';
 import { Link as RouterLink } from 'react-router-dom';
-import { FaFacebook, FaInstagram } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
+import { motion } from 'framer-motion';
 import { SOCIAL_LINKS } from '../constants';
+import { getWhatsAppLink } from '../utils/helpers';
+import { CONTACT_INFO } from '../constants';
+
+const MotionLink = motion(Link);
+const MotionIcon = motion(Icon);
 
 const Footer: React.FC = () => {
   const year = new Date().getFullYear();
@@ -27,24 +33,69 @@ const Footer: React.FC = () => {
           
           <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
             <Text fontWeight="bold" mb={2}>Quick Links</Text>
-            <Link as={RouterLink} to="/" color="gray.600" _hover={{ color: 'brand.primary' }}>
+            <MotionLink 
+              as={RouterLink} 
+              to="/" 
+              color="gray.600" 
+              _hover={{ color: 'brand.primary', textDecoration: 'none' }}
+              whileHover={{ x: 5 }}
+              transition={{ duration: 0.2 }}
+            >
               Home
-            </Link>
-            <Link as={RouterLink} to="/own-products" color="gray.600" _hover={{ color: 'brand.primary' }}>
+            </MotionLink>
+            <MotionLink 
+              as={RouterLink} 
+              to="/own-products" 
+              color="gray.600" 
+              _hover={{ color: 'brand.primary', textDecoration: 'none' }}
+              whileHover={{ x: 5 }}
+              transition={{ duration: 0.2 }}
+            >
               Products
-            </Link>
-            <Link as={RouterLink} to="/contact" color="gray.600" _hover={{ color: 'brand.primary' }}>
+            </MotionLink>
+            <MotionLink 
+              as={RouterLink} 
+              to="/contact" 
+              color="gray.600" 
+              _hover={{ color: 'brand.primary', textDecoration: 'none' }}
+              whileHover={{ x: 5 }}
+              transition={{ duration: 0.2 }}
+            >
               Contact
-            </Link>
-          </VStack>
-
-          <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
-            <Text fontWeight="bold" mb={2}>Follow Us</Text>            <HStack spacing={4}>              <Link href={SOCIAL_LINKS.facebook} isExternal aria-label="Facebook">
-                <Icon as={FaFacebook as React.FC<IconProps>} boxSize={5} color="brand.secondary" />
-              </Link>
-              <Link href={SOCIAL_LINKS.instagram} isExternal aria-label="Instagram">
-                <Icon as={FaInstagram as React.FC<IconProps>} boxSize={5} color="brand.primary" />
-              </Link>
+            </MotionLink>
+          </VStack>          <VStack align={{ base: 'center', md: 'flex-start' }} spacing={2}>
+            <Text fontWeight="bold" mb={2}>Follow Us</Text>
+            <HStack spacing={4}>
+              <MotionLink 
+                href={getWhatsAppLink(CONTACT_INFO.whatsapp)}
+                isExternal 
+                aria-label="WhatsApp"
+                whileHover={{ y: -3 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <MotionIcon 
+                  as={FaWhatsapp as React.FC<IconProps>} 
+                  boxSize={5} 
+                  color="green.500"
+                  whileHover={{ rotate: 5, scale: 1.2 }}
+                  transition={{ duration: 0.2 }}
+                />
+              </MotionLink>
+              <MotionLink 
+                href={SOCIAL_LINKS.instagram} 
+                isExternal 
+                aria-label="Instagram"
+                whileHover={{ y: -3 }}
+                whileTap={{ scale: 0.9 }}
+              >
+                <MotionIcon 
+                  as={FaInstagram as React.FC<IconProps>} 
+                  boxSize={5} 
+                  color="brand.primary"
+                  whileHover={{ rotate: 5, scale: 1.2 }}
+                  transition={{ duration: 0.2 }}
+                />
+              </MotionLink>
             </HStack>
           </VStack>
         </Flex>
@@ -55,8 +106,7 @@ const Footer: React.FC = () => {
           </Text>
         </Box>
       </Container>
-    </Box>
-  );
+    </Box>  );
 };
 
 export default Footer;
